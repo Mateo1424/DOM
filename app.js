@@ -33,7 +33,7 @@ credencial.appendChild(info);
 console.log(contenedorEL.appendChild(credencial));
 */
 
-const productos = [
+/*const productos = [
   {
     id: 1,
     nombre: "Camiseta",
@@ -76,4 +76,15 @@ for (const { nombre, precio, stock } of productos) {
         <p>$${precio}</p>
     </div>
     `;
-}
+}*/
+
+const listaEL = document.querySelector("ul");
+const btnEL = document.querySelector("button")
+
+btnEL.addEventListener("click", () => {
+    const nuevoLi = document.createElement("li");
+
+    nuevoLi.textContent = "banana";
+
+    listaEL.appendChild(nuevoLi);
+});
